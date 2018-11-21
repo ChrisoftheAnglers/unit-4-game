@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Skull 'o rama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body class="bg-light">
+    <header class="container-fluid">
+        <h1 class="text-center text-secondary"><u>Welcome to Skull 'O Rama!</u></h1>
+        <div class="row">
+            <section class="col-5">
+                <p class="text-black">
+                    <u>The rules are simple:</u> to start, a random score number, or target score, will be generated at the beginning of the game and shown to you.
+                    You are also given a score (starting at 0) based on points you earn while playing.
+                </p>
+                <p class="text-black">
+                    The 4 skulls buttons have random point values assigned to them similar to the target score, but with a catch:
+                    <strong>You aren't told what the values are until you have already gotten points from clicking the buttons!</strong>
+                </p>
+                <p class="text-black">
+                    If you manage to figure things out and get your score to equal the target score, you win! But if you go over the target score by so
+                    little as a single point, you lose. <strong>Have fun!</strong>
+                </p>
+            </section>
+            <section class="col-7"></section>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <!-- <section class="col-1"></section> -->
+            <section class="col-2 bg-primary">
+                <h2 class="text-light" id="target">Target Score: </h2>
+                <button class="btn btn-success" id="start">Start</button>
+                <button class="btn btn-danger" id="quit">Quit</button>
+            </section>
+            <section class="col-10"></section>
+        </div>
+        </div>
+        <div class="row bg-dark pt-2">
+            <div class="col-2"></div>
+            <div class="col-2">
+                <img id="crystalSkull" src="assets/images/beautiful-black-and-white-close-up-206351.png" class="img-fluid bg-dark" alt="A terrible movie">
+                <h4 class="text-center text-info" id="crystalSkullCap"></h6>
+            </div>
+            <div class="col-2">
+                <img id="lostSoul" src="assets/images/lostSoulDoomSprite.gif" class="mx-auto img-fluid bg-dark" alt="A classic of the fps genre">
+                <h4 class="text-center text-info" id="lostSoulCap"></h6>
+            </div>
+            <div class="col-2">
+                <img id="humanSkull" src="assets/images/actualSkull.png" class="img-fluid bg-dark" alt="A classic since modern Homo Sapiens">
+                <h4 class="text-center text-info" id="humanSkullCap"></h6>
+            </div>
+            <div class="col-2">
+                <img id="skullAndCrossbones" src="assets/images/SkullAndCrossbones.png" class="img-fluid bg-dark" alt="Yar harr">
+                <h4 class="text-center text-info" id="skullAndCrossbonesCap"></h6>
+            </div>
+            <section class="col-2"></section>
+        </div>
+        <div class="row bg-secondary">
+            <!-- <section class="col-1"></section> -->
+            <section class="col-6">
+                <h4 id="wins">Wins: 0</h4>
+                <h4 id="losses">Losses: 0</h4>
+                <h2 id="player">Your Score: </h2>
+            </section>
+            <section class="col-6"></section>
+        </div>
+    </main>
+</body>
+</html>
